@@ -19,6 +19,9 @@ device-mapper target.
 autoreconf -fiv
 
 %build
+export CC=gcc
+export CXX=g++
+
 %configure \
     --with-optimisation=-Os
 
