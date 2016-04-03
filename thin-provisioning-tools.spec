@@ -19,7 +19,9 @@ device-mapper target.
 autoreconf -fiv
 
 %build
-%configure
+%configure \
+    --with-optimisation=-Os
+
 %make
 
 %install
