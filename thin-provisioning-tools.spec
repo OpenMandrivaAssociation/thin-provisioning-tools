@@ -32,4 +32,5 @@ export CXX=g++
 
 %files
 %doc README.md
-
+%{_sbindir}/*
+%{_mandir}/man8/*.8.*
