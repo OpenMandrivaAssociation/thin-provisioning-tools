@@ -23,7 +23,7 @@ autoreconf -fiv
 
 %build
 %configure
-%make_build
+%make_build -j1
 
 %install
 %make_install
