@@ -1,3 +1,5 @@
+%global optflags %{optflags} -Oz
+
 Summary:	Manipulate dm-thin device-mapper target
 Name:		thin-provisioning-tools
 Version:	0.9.0
@@ -20,11 +22,10 @@ device-mapper target.
 autoreconf -fiv
 
 %build
-export CC=gcc
-export CXX=g++
-
-%configure
-%make_build
+%configure \
+    --with-optimisation="%{optflags}"
+ 
+%make_build V=""
 
 %install
 %make_install
