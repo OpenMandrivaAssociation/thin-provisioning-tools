@@ -12,6 +12,7 @@ Source1:	%{name}.rpmlintrc
 BuildRequires:	boost-devel
 BuildRequires:	pkgconfig(expat)
 BuildRequires:	libaio-devel
+Requires:	expat
 
 %description
 A suite of tools for manipulating the metadata of the dm-thin
@@ -19,6 +20,7 @@ device-mapper target.
 
 %prep
 %autosetup -p1
+printf "%s\n" "%{version}-%{release}" > VERSION
 autoreconf -fiv
 
 %build
@@ -28,7 +30,7 @@ autoreconf -fiv
 %make_build V=""
 
 %install
-%make_install
+%make_install STRIP="/bin/true"
 
 %files
 %doc README.md
