@@ -2,7 +2,7 @@
 
 Summary:	Manipulate dm-thin device-mapper target
 Name:		thin-provisioning-tools
-Version:	0.9.0
+Version:	1.0.1
 Release:	1
 License:	GPLv3
 Group:		System/Libraries
@@ -35,4 +35,4 @@ autoreconf -fiv
 %files
 %doc README.md
 %{_sbindir}/*
-%{_mandir}/man8/*.8.*
+%doc %{_mandir}/man8/*.8.*
