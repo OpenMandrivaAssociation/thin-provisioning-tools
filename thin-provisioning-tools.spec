@@ -3,7 +3,7 @@
 Summary:	Manipulate dm-thin device-mapper target
 Name:		thin-provisioning-tools
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	GPLv3
 Group:		System/Libraries
 Url:		https://github.com/jthornber/thin-provisioning-tools
