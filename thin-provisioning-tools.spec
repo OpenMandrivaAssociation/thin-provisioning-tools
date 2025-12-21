@@ -9,6 +9,11 @@ Group:		System/Libraries
 Url:		https://github.com/jthornber/thin-provisioning-tools
 Source0:	https://github.com/jthornber/thin-provisioning-tools/archive/%{name}-%{version}.tar.gz
 Source1:	%{name}.rpmlintrc
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	boost-devel
 BuildRequires:	pkgconfig(expat)
 BuildRequires:	libaio-devel
